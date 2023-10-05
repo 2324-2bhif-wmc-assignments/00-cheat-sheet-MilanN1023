@@ -112,6 +112,122 @@
                     anchor within a resource, such as a particular section of a long web page.</li>
             </ul>
 
+
+            <hr>
+            <h2>Web Server</h2>
+            <hr>
+            <h3>What is a web server?</h3>
+
+            <p>A web server is software or hardware that serves as the foundation for websites and web applications,
+                enabling them to be accessible over the internet. Its primary function is to handle incoming network requests from clients
+                (usually web browsers) and respond by delivering web content, such as HTML pages, images, videos, or other resources.</p>
+
+            <h3>What does a web server?</h3>
+
+            <ul>
+                <li>Request Handling: Web servers receive and process incoming requests from clients. These requests typically include the
+                    URL of the desired resource, such as a web page or an image file.</li>
+
+                <li>Resource Retrieval: The web server locates the requested resource within its file system or retrieves it from a database
+                    or external source, depending on the web application's configuration.</li>
+
+                <li>Content Generation: For dynamic websites and web applications, the web server may generate content on-the-fly using
+                    server-side scripting languages (e.g., PHP, Python, Ruby) and data from databases. This enables the creation of
+                    dynamic web pages that respond to user input.</li>
+
+                <li>HTTP(S) Handling: Web servers use the HTTP or HTTPS protocol to communicate with clients. They listen on specific ports
+                    (e.g., port 80 for HTTP and port 443 for HTTPS) to receive and respond to HTTP requests.
+                    HTTPS provides secure encrypted communication.</li>
+
+                <li>Content-Type Negotiation: Web servers determine the appropriate content type (e.g., HTML, CSS, JSON)
+                    based on the request's headers and serve the content with the correct MIME type.</li>
+
+                <li>Security: Web servers often include security features to protect against common web threats, such as DDoS attacks,
+                    SQL injection, and cross-site scripting (XSS) attacks. They can also enforce access control through authentication and
+                    authorization mechanisms.</li>
+
+                <li>Load Balancing: In high-traffic environments, multiple web servers may be used in conjunction with load balancers
+                    to distribute incoming requests evenly, ensuring scalability and redundancy.</li>
+
+                <li>Logging and Monitoring: Web servers typically log information about incoming requests and server responses.
+                    These logs can be useful for troubleshooting, performance analysis, and security auditing.</li>
+
+                <li>Caching: Web servers can cache frequently accessed resources to improve response times and reduce server load.
+                    Content delivery networks (CDNs) often employ caching at a global scale.</li>
+            </ul>
+
+            <h3>How can content be stored on a web server?</h3>
+
+            <p>Content can be stored on a web server through various methods and storage technologies. The choice of storage method depends
+                on the type of content, scalability requirements, and the configuration of the web server. Here are common ways to store
+                content on a web server:</p>
+
+            <ul>
+                <li>File System: The simplest method is to store content on the web server's file system. Static files, such as HTML pages,
+                    images, stylesheets (CSS), JavaScript files, and downloadable documents (PDFs, etc.), are typically stored this way.
+                    Content is organized into directories and subdirectories on the server, and the web server serves these files
+                    directly in response to HTTP requests.</li>
+
+                <li>Databases: Dynamic content, such as user-generated data, product listings, comments, and articles, is often stored in
+                    databases. Popular databases for web applications include MySQL, PostgreSQL, MongoDB, and SQLite. Content is stored as
+                    structured data and retrieved via database queries. Web server scripts (e.g., PHP, Python, Ruby) communicate with the
+                    database to fetch and present this content dynamically.</li>
+
+                <li>Content Management Systems (CMS): CMS platforms (examples already given above) have their own database systems for
+                    storing and managing web content. Content authors and administrators use the CMS interface to create, edit, and organize
+                    content, which is then stored in the CMS database.</li>
+
+                <li>Content Delivery Networks (CDNs): CDNs are third-party services that cache and distribute content across multiple
+                    servers in geographically distributed locations. CDNs store static content (e.g., images, stylesheets, JavaScript files)
+                    and serve it from servers that are closer to the user, reducing latency and improving performance.</li>
+
+                <li>Cloud Storage Services: Web servers can integrate with cloud storage services like Amazon S3, Google Cloud Storage,
+                    or Microsoft Azure Blob Storage. These services offer scalable and cost-effective storage solutions for web assets,
+                    including static files, images, and multimedia content.</li>
+
+                <li>Object Storage: Object storage solutions like Amazon S3, Swift (OpenStack Object Storage), or MinIO offer scalable
+                    and highly available storage for various types of unstructured data, making them suitable for storing large files,
+                    backups, and media assets.</li>
+
+                <li>Content Version Control Systems: Developers often use version control systems like Git to manage and store source code
+                    and web content collaboratively. Git repositories can be hosted on web servers or dedicated code hosting platforms
+                    like GitHub or GitLab.</li>
+
+                <li>Database File Systems (e.g., GridFS): Some databases, like MongoDB, have specialized file systems for storing large
+                    binary files such as images and videos. GridFS, for example, allows you to store files as documents within the database.</li>
+
+                <li>In-Memory Caches: Web servers can use in-memory caching systems like Redis or Memcached to store frequently accessed
+                    data temporarily, reducing the need to fetch it from databases or file systems for every request. This can significantly
+                    improve response times for dynamic content.</li>
+            </ul>
+
+            <h3>How is content in webpages described?</h3>
+
+            <p>Content in webpages is described using several markup languages and technologies that structure and present the information
+                to web browsers and other user agents. The primary technologies for describing content in webpages include:
+
+            <ul>
+                <li>Hypertext Markup Language (HTML): HTML is the standard markup language for creating web documents. It defines
+                    the structure of a webpage, including headings, paragraphs, lists, links, images, forms, and more.
+                    HTML elements are used to mark up the content, providing semantics that browsers use to render the page correctly.</li>
+
+                <li>Cascading Style Sheets (CSS): CSS is used to control the presentation and layout of HTML elements.
+                    It allows web developers to specify styles such as colors, fonts, spacing, and positioning. By separating content (HTML)
+                    from presentation (CSS), web designers can create visually appealing and consistent webpages.</li>
+
+                <li>JavaScript (JS): JavaScript is a scripting language that adds interactivity and behavior to webpages. It can be used
+                    to create dynamic content, handle user input, perform client-side validation, and make asynchronous requests
+                    to web servers (AJAX). JavaScript frameworks and libraries like React, Angular, and Vue.js facilitate complex
+                    web application development.</li>
+
+                <li>Document Object Model (DOM): The DOM is a programming interface that represents the structure and content
+                    of a webpage as a tree-like hierarchy of objects. It allows JavaScript to access, manipulate,
+                    and modify HTML and XML documents dynamically. This enables the creation of interactive and responsive web applications.</li>
+
+                <li>Web Components: Web Components are a set of web platform APIs and a specification for creating reusable custom HTML elements.
+                    They encapsulate both the structure and behavior of a UI component, making it easier to build and maintain complex
+                    web applications.</li>
+            </ul>
         </div>
     </article>
 </body>
