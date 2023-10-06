@@ -27,7 +27,7 @@
                     users to locate and access web resources.</li>
 
                 <li>They provide
-                a standardized way to reference web content.</li>
+                    a standardized way to reference web content.</li>
 
                 <li>HTTP and HTTPS: Hypertext Transfer Protocol (HTTP) and its
                     secure counterpart, HTTPS, are communication protocols that facilitate
@@ -84,7 +84,7 @@
                 <li>Scheme: The scheme, also known as the protocol, specifies the method or protocol to be used for accessing the resource.
                     Common schemes include:
                     <ul>
-                        <li>"http://" or "https://": Hypertext Transfer Protocol (HTTP) and its secure version (HTTP Secure, or HTTPS)
+                        <li>"Http://" or "https://": Hypertext Transfer Protocol (HTTP) and its secure version (HTTP Secure, or HTTPS)
                             for web pages and web resources.</li>
 
                         <li>ftp://: File Transfer Protocol for downloading files.</li>
@@ -111,8 +111,9 @@
                 <li>Fragment Identifier: The fragment identifier, preceded by a hash (#), is used to specify a specific section or
                     anchor within a resource, such as a particular section of a long web page.</li>
             </ul>
+        </div>
 
-
+        <div>
             <hr>
             <h2>Web Server</h2>
             <hr>
@@ -228,7 +229,9 @@
                     They encapsulate both the structure and behavior of a UI component, making it easier to build and maintain complex
                     web applications.</li>
             </ul>
+        </div>
 
+        <div>
             <hr>
             <h2>Web Client</h2>
             <hr>
@@ -308,6 +311,133 @@
 
             <p>So web clients and web browsers are related concepts, but they are not the same. All web browsers are web clients,
                 but not all web clients are web browsers.</p>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Hello World</h2>
+            <hr>
+
+            <h3>What is the html head element?</h3>
+
+            <p>The HTML "head" element is a crucial part of an HTML document. It provides metadata and other information about
+                the document, which is not typically displayed directly on the webpage but is essential for various purposes, such as
+                search engine optimization (SEO), browser rendering, and defining the document's character encoding. Here are some
+                common elements and attributes you can find within the "head" element:</p>
+
+            <ul>
+                <li>Title: The "title" element defines the title of the webpage, which appears in the browser's title bar or tab. It's also
+                    used as the default name when users bookmark the page. Search engines use the title for indexing and displaying
+                    search results.</li>
+
+                <li>Character Encoding ("meta charset"): The "meta charset" element specifies the character encoding used for the document.
+                    It helps browsers interpret and display text correctly, especially for non-ASCII characters.</li>
+
+                <li>Viewport Meta ("meta name="viewport""): This "meta" tag is commonly used for making webpages responsive on mobile
+                    devices. It controls the viewport's width and scaling on mobile screens.</li>
+
+                <li>Favicons ("link rel="icon""): Favicons are small icons that appear in the browser tab or bookmark list.
+                    They help users identify websites. You can specify multiple sizes and formats for different devices.</li>
+
+                <li>External Stylesheets ("link rel="stylesheet""): The "link" element is used to reference external CSS files,
+                    allowing you to apply styles to the HTML content.</li>
+
+                <li>Metadata (<meta name>): Various <meta> elements provide metadata about the webpage, such as its author, description,
+                    and keywords. Search engines use this information for indexing and displaying search results.</li>
+
+                <li>External Scripts ("script src"): You can include JavaScript files using the "script" element within the "head"
+                    section. This allows you to add interactive features and behavior to your webpage.</li>
+
+                <li>Other Metadata ("meta property", "meta http-equiv"): Additional "meta" elements can provide various types of metadata,
+                    such as Open Graph tags for social media sharing or "meta http-equiv" elements for setting HTTP headers.</li>
+
+                <li>Inline Styles ("style"): While it's more common to include styles in external CSS files, you can also define inline
+                    styles within a "style" element in the "head" to apply styles directly to the document.</li>
+            </ul>
+
+            <h3>What does "!DOCTYPE html" mean?</h3>
+
+            <p>The "!DOCTYPE html" declaration, often referred to as the "DOCTYPE declaration" or simply "DOCTYPE," is an important
+                statement at the beginning of an HTML document. It specifies the document type definition and version of HTML being used
+                in the document. Here's what "!DOCTYPE html" means and why it's used:</p>
+
+            <p>By including "!DOCTYPE html" at the beginning of an HTML document, you're indicating to the browser that the document
+                is written in HTML5. This helps the browser render the page correctly and ensures compatibility with modern web standards.</p>
+
+            <h3>What are the two top most elements within the html element?</h3>
+
+            <p>The two topmost elements within the HTML element are typically:</p>
+
+            <ul>
+                <li>"head" Element: The "head" element is one of the topmost elements within an HTML document, immediately following
+                    the opening "html" tag. It contains metadata about the document, such as the document's title, character encoding,
+                    linked stylesheets, and various other settings that provide information to the browser and search engines but are
+                    not directly displayed on the webpage.</li>
+
+                <li>"body" Element: The "body" element is the second topmost element within an HTML document, immediately following
+                    the "head" element. It contains the actual content of the webpage that is visible to users, including text, images,
+                    links, forms, and other elements. This is where you place the content that users see and interact with when they visit
+                    your webpage.</li>
+            </ul>
+
+            <p>These two elements, "head" and "body", are fundamental parts of an HTML document. The "head" element contains
+                information about the document, while the "body" element contains the content that users see and interact with
+                when viewing the webpage in a web browser.</p>
+
+            <h3>How to emphasize a text and how is it displayed in the browser?</h3>
+
+            <p>
+                To emphasize text in HTML, you can use the "em" element or the "strong" element, depending on the level of emphasis
+                you want to apply. These elements are used to provide semantic meaning to the text and can be styled using CSS for
+                visual presentation. Here's how to use both elements and how they are typically displayed in a web browser:</p>
+
+            <ul>
+                <li><em>"em" Element</em> (Emphasis):</li>
+
+                <li>
+                    <ul>
+                        <li>The "em" element is used to emphasize text, indicating that the enclosed text should be emphasized within
+                            the context of the surrounding content.</li>
+
+                        <li>By default, the text enclosed in "em" is typically displayed in italics. However, the actual visual styling
+                            can be controlled through CSS.</li>
+                    </ul>
+                </li>
+
+                <li>Display in Browser: This is an emphasized word. (Displayed in italics by default, but appearance may vary based on
+                    CSS styling.)</li>
+
+                <li><strong>"strong" Element </strong>(Strong Emphasis):</li>
+
+                <li>
+                    <ul>
+                        <li>The "strong" element is used for stronger emphasis, indicating that the enclosed text is of
+                            particular importance or should be given extra weight.</li>
+
+                        <li>By default, text enclosed in "strong" is typically displayed in bold. However, as with "em",
+                            the actual visual styling can be controlled through CSS.</li>
+                    </ul>
+                </li>
+
+                <li>Display in Browser: This is a strongly emphasized word.
+                    (Displayed in bold by default, but appearance may vary based on CSS styling.)</li>
+            </ul>
+
+            <h3>How to mark up important ext and how is it displayed in the browser?</h3>
+
+            <p>To mark up important text in HTML, you can use <mark>the "mark" element</mark>. <mark>The "mark" element</mark> is used
+                to highlight or mark a specific portion of text as important or relevant within the context of the content. When you use
+                <mark>the "mark" element</mark>, the enclosed text is typically displayed with a background color to make it visually stand out.
+                Here's how to use <mark>the "mark" element</mark> and how it is displayed in a web browser:</p>
+
+            <p>Display in Browser: This is some important text in the document.
+                (The text <mark>"important text"</mark> is typically highlighted with a background color to make it visually prominent.)</p>
+
+            <p>By default, modern web browsers apply a <mark>yellow background color</mark> to text enclosed within the "mark" element,
+                making it easily distinguishable from the surrounding content. However, you can customize the appearance of the
+                "mark" element using CSS if you want to use a different background color or other styling.</p>
+
+            <hr>
         </div>
     </article>
 </body>
