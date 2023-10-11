@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Cheat Sheet">
+    <meta name="author" content="Milan Nuzdic">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Cheat Sheet</title>
+</head>
+<body>
+    <article>
+        <h1 class="solid">HTML Basics</h1>
+        <div>
+            <hr>
+            <h2>World Wide Web General</h2>
+            <hr>
+            <h3 class="groove">What are the most essential technologies that made the World Wide Web such a success?</h3>
+
+            <p>The success of the World Wide Web can be attributed to several essential
+                technologies and innovations, including:</p>
+
+            <ul>
+                <li><strong>Hypertext Markup Language (HTML):</strong> HTML is the standard
+                    markup language used to create web pages.</li>
+
+                <li>It allows for the structuring of content on the web, making it accessible and easily viewable through
+                    web browsers.</li>
+
+                <li><strong>Uniform Resource Locator (URL):</strong> URLs are web addresses that enable
+                    users to locate and access web resources.</li>
+
+                <li>They provide a standardized way to reference web content.</li>
+
+                <li><strong>HTTP and HTTPS:</strong> Hypertext Transfer Protocol (HTTP) and its
+                    secure counterpart, HTTPS, are communication protocols that facilitate
+                    the transfer of data between a web server and a client
+                    (typically a web browser).</li>
+
+                <li>HTTPS encryption ensures secure
+                    data transmission, which is essential for online security.</li>
+
+                <li><strong>Web Browsers:</strong> Web browsers like Netscape Navigator and later
+                    Internet Explorer, Firefox, Chrome, and Safari made the web accessible
+                    to the general public by providing user-friendly interfaces for
+                    viewing and interacting with web content.</li>
+
+                <li><strong>Web Servers:</strong> Web servers, like Apache and Nginx, host and deliver web content to users upon request. They play a
+                    crucial role in making websites accessible to a global audience.</li>
+
+                <li><strong>Search Engines:</strong> Search engines like Google revolutionized web navigation by enabling users to find specific information
+                    within the vast web.</li>
+
+                <li>They use complex algorithms to index and rank web pages.</li>
+
+                <li><strong>Web Standards:</strong> Organizations like the World Wide Web Consortium (W3C) established and maintained web standards
+                    to ensure compatibility and consistency in web design and development.</li>
+
+                <li><strong>Web Development Frameworks:</strong> Frameworks like React, Angular, and Vue.js have streamlined web development, making it easier
+                    for developers to create interactive and responsive web applications.</li>
+
+                <li><strong>Content Management Systems (CMS):</strong> CMS platforms like WordPress, Joomla, and Drupal simplify website creation
+                    and maintenance, enabling individuals and organizations to publish content without extensive coding knowledge.</li>
+
+                <li><strong>Cloud Computing:</strong> Cloud services and hosting platforms, such as Amazon Web Services (AWS) and Microsoft Azure,
+                    have made it easier and more cost-effective to deploy web applications and services globally.</li>
+
+                <li><strong>Mobile Technologies:</strong> The rise of smartphones and mobile browsing led to responsive web design and mobile app development,
+                    further expanding the reach of the web.</li>
+
+                <li><strong>Social Media:</strong> Platforms like Facebook, Twitter, and Instagram created new ways for users to connect and share content
+                    on the web, driving user engagement.</li>
+
+                <li><strong>E-commerce Technologies:</strong> Secure payment gateways and e-commerce platforms like Shopify and WooCommerce have facilitated
+                    online shopping, contributing to the web's economic success.</li>
+            </ul>
+
+            <h3 class="groove">How are resources (html pages, images, etc.) addressed in the web?</h3>
+
+            <p>Resources on the web, such as HTML pages, images, CSS files, JavaScript files, videos, and other types of content,
+                are addressed using Uniform Resource Locators (URLs). A URL is a standardized way to identify and access resources on the
+                World Wide Web. URLs consist of several components that help specify the location and type of resource:</p>
+
+            <h3 class="groove">What are the general components of an url?</h3>
+
+            <ul>
+                <li><strong>Scheme:</strong> The scheme, also known as the protocol, specifies the method or protocol to be used for accessing the resource.
+                    Common schemes include:
+                    <ul>
+                        <li><strong>"Http://"</strong> or <strong>"https://":</strong> Hypertext Transfer Protocol (HTTP) and its secure version (HTTP Secure, or HTTPS)
+                            for web pages and web resources.</li>
+
+                        <li><strong>ftp://:</strong> File Transfer Protocol for downloading files.</li>
+
+                        <li><strong>mailto:</strong> Used for email addresses.</li>
+
+                        <li><strong>file://:</strong> For local file system access.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Domain or Hostname:</strong> The domain or hostname identifies the server where the resource is located. It can be an IP address
+                    (e.g., 192.168.1.1) or a human-readable domain name (e.g., www.example.com).</li>
+
+                <li><strong>Port:</strong> An optional port number can be specified to identify a specific port on the server. If omitted,
+                    the default port for the specified scheme is used (e.g., port 80 for HTTP and port 443 for HTTPS).</li>
+
+                <li><strong>Path:</strong> The path component specifies the directory structure or location of the resource on the server.
+                    For example, "/images/pic.jpg" specifies a file named "pic.jpg" in the "images" directory.</li>
+
+                <li><strong>Query Parameters:</strong> Query parameters are used to pass additional data to a resource. They follow a question mark (?)
+                    and are separated by ampersands (&). For example, "?id=123&category=tech" might be used to pass parameters to a
+                    dynamic web page.</li>
+
+                <li><strong>Fragment Identifier:</strong> The fragment identifier, preceded by a hash (#), is used to specify a specific section or
+                    anchor within a resource, such as a particular section of a long web page.</li>
+            </ul>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Web Server</h2>
+            <hr>
+            <h3 class="double">What is a web server?</h3>
+
+            <p>A web server is software or hardware that serves as the foundation for websites and web applications,
+                enabling them to be accessible over the internet. Its primary function is to handle incoming network requests from clients
+                (usually web browsers) and respond by delivering web content, such as HTML pages, images, videos, or other resources.</p>
+
+            <h3 class="double">What does a web server?</h3>
+
+            <ul>
+                <li><strong>Request Handling:</strong> Web servers receive and process incoming requests from clients. These requests typically include the
+                    URL of the desired resource, such as a web page or an image file.</li>
+
+                <li><strong>Resource Retrieval:</strong> The web server locates the requested resource within its file system or retrieves it from a database
+                    or external source, depending on the web application's configuration.</li>
+
+                <li><strong>Content Generation:</strong> For dynamic websites and web applications, the web server may generate content on-the-fly using
+                    server-side scripting languages (e.g., PHP, Python, Ruby) and data from databases. This enables the creation of
+                    dynamic web pages that respond to user input.</li>
+
+                <li><strong>HTTP(S) Handling:</strong> Web servers use the HTTP or HTTPS protocol to communicate with clients. They listen on specific ports
+                    (e.g., port 80 for HTTP and port 443 for HTTPS) to receive and respond to HTTP requests.
+                    HTTPS provides secure encrypted communication.</li>
+
+                <li><strong>Content-Type Negotiation:</strong> Web servers determine the appropriate content type (e.g., HTML, CSS, JSON)
+                    based on the request's headers and serve the content with the correct MIME type.</li>
+
+                <li><strong>Security:</strong> Web servers often include security features to protect against common web threats, such as DDoS attacks,
+                    SQL injection, and cross-site scripting (XSS) attacks. They can also enforce access control through authentication and
+                    authorization mechanisms.</li>
+
+                <li><strong>Load Balancing:</strong> In high-traffic environments, multiple web servers may be used in conjunction with load balancers
+                    to distribute incoming requests evenly, ensuring scalability and redundancy.</li>
+
+                <li><strong>Logging and Monitoring:</strong> Web servers typically log information about incoming requests and server responses.
+                    These logs can be useful for troubleshooting, performance analysis, and security auditing.</li>
+
+                <li><strong>Caching:</strong> Web servers can cache frequently accessed resources to improve response times and reduce server load.
+                    Content delivery networks (CDNs) often employ caching at a global scale.</li>
+            </ul>
+
+            <h3 class="double">How can content be stored on a web server?</h3>
+
+            <p>Content can be stored on a web server through various methods and storage technologies.
+                The choice of storage method depends on the type of content, scalability requirements,
+                and the configuration of the web server. Here are common ways to store content on a web server:</p>
+
+            <ul>
+                <li><strong>File System:</strong> The simplest method is to store content on the web server's file system. Static files, such as HTML pages,
+                    images, stylesheets (CSS), JavaScript files, and downloadable documents (PDFs, etc.), are typically stored this way.
+                    Content is organized into directories and subdirectories on the server, and the web server serves these files
+                    directly in response to HTTP requests.</li>
+
+                <li><strong>Databases:</strong> Dynamic content, such as user-generated data, product listings, comments, and articles, is often stored in
+                    databases. Popular databases for web applications include MySQL, PostgreSQL, MongoDB, and SQLite. Content is stored as
+                    structured data and retrieved via database queries. Web server scripts (e.g., PHP, Python, Ruby) communicate with the
+                    database to fetch and present this content dynamically.</li>
+
+                <li><strong>Content Management Systems (CMS):</strong> CMS platforms (examples already given above) have their own database systems for
+                    storing and managing web content. Content authors and administrators use the CMS interface to create, edit, and organize
+                    content, which is then stored in the CMS database.</li>
+
+                <li><strong>Content Delivery Networks (CDNs):</strong> CDNs are third-party services that cache and distribute content across multiple
+                    servers in geographically distributed locations. CDNs store static content (e.g., images, stylesheets, JavaScript files)
+                    and serve it from servers that are closer to the user, reducing latency and improving performance.</li>
+
+                <li><strong>Cloud Storage Services:</strong> Web servers can integrate with cloud storage services like Amazon S3, Google Cloud Storage,
+                    or Microsoft Azure Blob Storage. These services offer scalable and cost-effective storage solutions for web assets,
+                    including static files, images, and multimedia content.</li>
+
+                <li><strong>Object Storage:</strong> Object storage solutions like Amazon S3, Swift (OpenStack Object Storage), or MinIO offer scalable
+                    and highly available storage for various types of unstructured data, making them suitable for storing large files,
+                    backups, and media assets.</li>
+
+                <li><strong>Content Version Control Systems:</strong> Developers often use version control systems like Git to manage and store source code
+                    and web content collaboratively. Git repositories can be hosted on web servers or dedicated code hosting platforms
+                    like GitHub or GitLab.</li>
+
+                <li><strong>Database File Systems (e.g., GridFS):</strong> Some databases, like MongoDB, have specialized file systems for storing large
+                    binary files such as images and videos. GridFS, for example, allows you to store files as documents within the database.</li>
+
+                <li><strong>In-Memory Caches:</strong> Web servers can use in-memory caching systems like Redis or Memcached to store frequently accessed
+                    data temporarily, reducing the need to fetch it from databases or file systems for every request. This can significantly
+                    improve response times for dynamic content.</li>
+            </ul>
+
+            <h3 class="double">How is content in webpages described?</h3>
+
+            <p>Content in webpages is described using several markup languages and technologies that structure and present the information
+                to web browsers and other user agents. The primary technologies for describing content in webpages include:
+
+            <ul>
+                <li>Hypertext Markup Language (HTML): HTML is the standard markup language for creating web documents. It defines
+                    the structure of a webpage, including headings, paragraphs, lists, links, images, forms, and more.
+                    HTML elements are used to mark up the content, providing semantics that browsers use to render the page correctly.</li>
+
+                <li><strong>Cascading Style Sheets (CSS):</strong> CSS is used to control the presentation and layout of HTML elements.
+                    It allows web developers to specify styles such as colors, fonts, spacing, and positioning. By separating content (HTML)
+                    from presentation (CSS), web designers can create visually appealing and consistent webpages.</li>
+
+                <li><strong>JavaScript (JS):</strong> JavaScript is a scripting language that adds interactivity and behavior to webpages. It can be used
+                    to create dynamic content, handle user input, perform client-side validation, and make asynchronous requests
+                    to web servers (AJAX). JavaScript-frameworks and libraries like React, Angular, and Vue.js facilitate complex
+                    web application development.</li>
+
+                <li><strong>Document Object Model (DOM):</strong> The DOM is a programming interface that represents the structure and content
+                    of a webpage as a tree-like hierarchy of objects. It allows JavaScript to access, manipulate,
+                    and modify HTML and XML documents dynamically. This enables the creation of interactive and responsive web applications.</li>
+
+                <li><strong>Web Components:</strong> Web Components are a set of web platform APIs and a specification for creating reusable custom HTML elements.
+                    They encapsulate both the structure and behavior of a UI component, making it easier to build and maintain complex
+                    web applications.</li>
+            </ul>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Web Client</h2>
+            <hr>
+
+            <h3 class="dotted">What is a web client?</h3>
+
+            <p>A web client is a software application or device that interacts with web servers to request and retrieve web content.
+                Web clients are responsible for displaying webpages, rendering content, and enabling users to interact with websites and
+                web applications. They play a crucial role in the client-server model of the World Wide Web.</p>
+
+            <h3 class="dotted">What does a web client?</h3>
+
+            <p>Here is what a web client does:</p>
+
+            <ul>
+                <li><strong>Sends HTTP Requests:</strong> The primary function of a web client is to send HTTP (Hypertext Transfer Protocol) requests to
+                    web servers. These requests are initiated when a user enters a URL in a web browser's address bar, clicks on links,
+                    submits forms, or triggers other actions that require data from a web server</li>
+
+                <li><strong>Requests Web Resources:</strong> Web clients request various types of web resources from web servers. These resources include
+                    HTML documents, images, stylesheets (CSS), JavaScript files, videos, audio files, documents, and more.</li>
+
+                <li><strong>Processes HTML:</strong> When the web client receives an HTML document from a web server, it parses the HTML to understand
+                    the document's structure, including headings, paragraphs, links, and embedded resources.</li>
+
+                <li><strong>Fetches External Resources:</strong> In addition to the HTML document itself, the web client fetches external resources
+                    referenced within the HTML, such as images, stylesheets, and JavaScript files. These additional resources are requested
+                    from the server as needed.</li>
+
+                <li><strong>Renders Web Pages:</strong> The web client combines the HTML content, CSS styles, and JavaScript behavior to render web pages
+                    in a visually coherent and interactive manner. It lays out the page's elements, applies styles, and displays multimedia
+                    content.</li>
+
+                <li><strong>Executes JavaScript:</strong> Web clients execute JavaScript code embedded in webpages, allowing for dynamic interactivity
+                    and behavior. JavaScript can modify the DOM (Document Object Model), handle user input, make asynchronous requests to
+                    servers (AJAX), and create responsive web applications.</li>
+
+                <li><strong>Handles User Input:</strong> Web clients enable users to interact with web content by handling user input events such as clicks,
+                    keyboard input, form submissions, and mouse movements. They translate these interactions into actions that affect the
+                    displayed webpage.</li>
+
+                <li><strong>Manages Cookies and Sessions:</strong> Web clients manage cookies and sessions to maintain user state and enable features like
+                    persistent logins and shopping carts in web applications. They send cookies to servers as part of HTTP requests and
+                    store session data locally.</li>
+
+                <li><strong>Provides a User Interface:</strong> Web clients provide the user interface for navigating the web. This includes elements like
+                    the address bar, back and forward buttons, bookmarks, tabs, and various user controls.</li>
+
+                <li><strong>Displays Errors and Messages:</strong> Web clients handle errors and informational messages from web servers.
+                    For example, they may display HTTP status codes (e.g., 404 Not Found), security warnings, or notifications to users.</li>
+
+                <li><strong>Supports Accessibility:</strong> Many web clients are designed to be accessible to users with disabilities. They may include
+                    features like screen readers, keyboard navigation, and text-to-speech capabilities to ensure that web content is usable
+                    by all individuals.</li>
+
+                <li><strong>Manages Cache:</strong> Web clients often store cached copies of web resources to improve performance and reduce server load.
+                    Cached resources are used to display web pages more quickly when revisiting a website.</li>
+
+                <li><strong>Handles Redirects:</strong> When web servers respond with HTTP redirect status codes (e.g., 301 Moved Permanently or 302 Found),
+                    web clients follow the provided redirection instructions to access the correct resource.</li>
+            </ul>
+
+            <h3 class="dotted">Web Client and Web Browser is the same (?)</h3>
+
+            <p>That is a false statement because...</p>
+
+            <p>A web browser is a specific type of web client that is primarily designed for browsing the World Wide Web. It is a software
+                application used by individuals to access websites, view webpages, and interact with web content. Web browsers like Google
+                Chrome, Mozilla Firefox, Microsoft Edge, Safari, and Opera are examples of popular web browsers. Browsers provide
+                user-friendly interfaces, bookmarks, extensions, and features for a seamless web browsing experience.</p>
+
+            <p>On the other hand, a web client is a broader term that encompasses any software or device that interacts with web servers to
+                retrieve web content. While web browsers are the most common type of web client, other types of web clients include
+                command-line utilities, mobile apps, email clients, chat applications, and various software applications that
+                communicate with web servers through APIs or web services. These non-browser web clients may have specialized purposes
+                beyond web browsing.</p>
+
+            <p>So web clients and web browsers are related concepts, but they are not the same. All web browsers are web clients,
+                but not all web clients are web browsers.</p>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Hello World</h2>
+            <hr>
+
+            <h3 class="dashed">What is the html head element?</h3>
+
+            <p>The HTML "head" element is a crucial part of an HTML document. It provides metadata and other information about
+                the document, which is not typically displayed directly on the webpage but is essential for various purposes, such as
+                search engine optimization (SEO), browser rendering, and defining the document's character encoding. Here are some
+                common elements and attributes you can find within the "head" element:</p>
+
+            <ul>
+                <li><strong>Title:</strong> The "title" element defines the title of the webpage, which appears in the browser's title bar or tab. It's also
+                    used as the default name when users bookmark the page. Search engines use the title for indexing and displaying
+                    search results.</li>
+
+                <li><strong>Character Encoding ("meta charset"):</strong> The "meta charset" element specifies the character encoding used for the document.
+                    It helps browsers interpret and display text correctly, especially for non-ASCII characters.</li>
+
+                <li><strong>Viewport Meta ("meta name="viewport""):</strong> This "meta" tag is commonly used for making webpages responsive on mobile
+                    devices. It controls the viewport's width and scaling on mobile screens.</li>
+
+                <li><strong>Favicons ("link rel="icon""):</strong> Favicons are small icons that appear in the browser tab or bookmark list.
+                    They help users identify websites. You can specify multiple sizes and formats for different devices.</li>
+
+                <li><strong>External Stylesheets ("link rel="stylesheet""):</strong> The "link" element is used to reference external CSS files,
+                    allowing you to apply styles to the HTML content.</li>
+
+                <li><strong>Metadata ("meta name"):</strong> Various "meta" elements provide metadata about the webpage, such as its author, description,
+                    and keywords. Search engines use this information for indexing and displaying search results.</li>
+
+                <li><strong>External Scripts ("script src"):</strong> You can include JavaScript files using the "script" element within the "head"
+                    section. This allows you to add interactive features and behavior to your webpage.</li>
+
+                <li><strong>Other Metadata ("meta property", "meta http-equiv"):</strong> Additional "meta" elements can provide various types of metadata,
+                    such as Open Graph tags for social media sharing or "meta http-equiv" elements for setting HTTP headers.</li>
+
+                <li><strong>Inline Styles ("style"):</strong> While it's more common to include styles in external CSS files, you can also define inline
+                    styles within a "style" element in the "head" to apply styles directly to the document.</li>
+            </ul>
+
+            <h3 class="dashed">What does "!DOCTYPE html" mean?</h3>
+
+            <p>The "!DOCTYPE html" declaration, often referred to as the "DOCTYPE declaration" or simply "DOCTYPE," is an important
+                statement at the beginning of an HTML document. It specifies the document type definition and version of HTML being used
+                in the document. Here's what "!DOCTYPE html" means and why it's used:</p>
+
+            <p>By including "!DOCTYPE html" at the beginning of an HTML document, you're indicating to the browser that the document
+                is written in HTML5. This helps the browser render the page correctly and ensures compatibility with modern web standards.</p>
+
+            <h3 class="dashed">What are the two top most elements within the html element?</h3>
+
+            <p>The two topmost elements within the HTML element are typically:</p>
+
+            <ul>
+                <li><strong>"head" Element:</strong> The "head" element is one of the topmost elements within an HTML document, immediately following
+                    the opening "html" tag. It contains metadata about the document, such as the document's title, character encoding,
+                    linked stylesheets, and various other settings that provide information to the browser and search engines but are
+                    not directly displayed on the webpage.</li>
+
+                <li><strong>"body" Element:</strong> The "body" element is the second topmost element within an HTML document, immediately following
+                    the "head" element. It contains the actual content of the webpage that is visible to users, including text, images,
+                    links, forms, and other elements. This is where you place the content that users see and interact with when they visit
+                    your webpage.</li>
+            </ul>
+
+            <p>These two elements, "head" and "body", are fundamental parts of an HTML document. The "head" element contains
+                information about the document, while the "body" element contains the content that users see and interact with
+                when viewing the webpage in a web browser.</p>
+
+            <h3 class="dashed">How to emphasize a text and how is it displayed in the browser?</h3>
+
+            <p>
+                To emphasize text in HTML, you can use the "em" element or the "strong" element, depending on the level of emphasis
+                you want to apply. These elements are used to provide semantic meaning to the text and can be styled using CSS for
+                visual presentation. Here's how to use both elements and how they are typically displayed in a web browser:</p>
+
+            <ul>
+                <li><em>"em" Element (Emphasis):</em></li>
+
+                <li>
+                    <ul>
+                        <li>The "em" element is used to emphasize text, indicating that the enclosed text should be emphasized within
+                            the context of the surrounding content.</li>
+
+                        <li>By default, the text enclosed in "em" is typically displayed in italics. However, the actual visual styling
+                            can be controlled through CSS.</li>
+                    </ul>
+                </li>
+
+                <li>Display in Browser: This is an emphasized word. (Displayed in italics by default, but appearance may vary based on
+                    CSS styling.)</li>
+
+                <li><strong>"strong" Element (Strong Emphasis):</strong></li>
+
+                <li>
+                    <ul>
+                        <li>The "strong" element is used for stronger emphasis, indicating that the enclosed text is of
+                            particular importance or should be given extra weight.</li>
+
+                        <li>By default, text enclosed in "strong" is typically displayed in bold. However, as with "em",
+                            the actual visual styling can be controlled through CSS.</li>
+                    </ul>
+                </li>
+
+                <li>Display in Browser: This is a strongly emphasized word.
+                    (Displayed in bold by default, but appearance may vary based on CSS styling.)</li>
+            </ul>
+
+            <h3 class="dashed">How to mark up important ext and how is it displayed in the browser?</h3>
+
+            <p>To mark up important text in HTML, you can use <mark>the "mark" element</mark>. <mark>The "mark" element</mark> is used
+                to highlight or mark a specific portion of text as important or relevant within the context of the content. When you use
+                <mark>the "mark" element</mark>, the enclosed text is typically displayed with a background color to make it visually stand out.
+                Here's how to use <mark>the "mark" element</mark> and how it is displayed in a web browser:</p>
+
+            <p>Display in Browser: This is some important text in the document.
+                (The text <mark>"important text"</mark> is typically highlighted with a background color to make it visually prominent.)</p>
+
+            <p>By default, modern web browsers apply a <mark>yellow background color</mark> to text enclosed within the "mark" element,
+                making it easily distinguishable from the surrounding content. However, you can customize the appearance of the
+                "mark" element using CSS if you want to use a different background color or other styling.</p>
+
+            <hr>
+        </div>
+    </article>
+</body>
+</html>
