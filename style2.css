@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+pre {
+    font-family: 'Courier New', monospace; /* Schriftart für Code */
+    font-size: 14px; /* Schriftgröße anpassen */
+    line-height: 1.5; /* Zeilenabstand anpassen */
+    background-color: #f5f5f5; /* Hintergrundfarbe anpassen */
+    padding: 10px; /* Innenabstand hinzufügen, um den Text vom Rand zu trennen */
+    border: 1px solid #ccc; /* Einen dünnen Rahmen hinzufügen */
+    border-radius: 5px; /* Abrundung der Ecken für eine bessere Optik */
+    white-space: pre-wrap; /* Umbruch von langen Zeilen ermöglichen */
+}

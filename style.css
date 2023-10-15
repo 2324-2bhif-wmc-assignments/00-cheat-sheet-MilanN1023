@@ -43,3 +43,7 @@ h3.dotted {
 h3.dashed {
     border-style: dashed;
 }
+
+a:hover {
+    color: green;
+}
