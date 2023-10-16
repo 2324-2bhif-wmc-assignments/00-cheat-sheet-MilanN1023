@@ -16,76 +16,157 @@
         <h1>CSS Basics</h1>
     </header>
 
+    <!-- Don't forget to underline important information -->
     <div class="content">
         <h2>CSS Syntax</h2>
         <img src="img_selector.gif" alt="Selector">
-        <article>
-            <header>
-                <h1>CSS Basics</h1>
-            </header>
+        <h3>CSS Selectors</h3>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
 
-            <div class="content">
-                <h2>CSS Syntax</h2>
-                <img src="img_selector.gif" alt="Selector">
-                <h3>CSS Selectors</h3>
-                <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <ul>
+            <li><strong>Simple selectors</strong> (select elements based on name, id, class)</li>
+            <li><strong>Combinator selectors</strong> (select elements based on a specific relationship between them)</li>
+            <li><strong>Pseudo-class selectors</strong> (select elements based on a certain state)</li>
+            <li><strong>Pseudo-elements selectors</strong> (select and style a part of an element)</li>
+            <li><strong>Attribute selectors</strong> (select elements based on an attribute or attribute value)</li>
+        </ul>
 
-                <p>We can divide CSS selectors into five categories:</p>
+        <p>The basic CSS selectors:</p>
+        <ul>
+            <li><strong>The element Selector</strong><br>
+                The element selector selects HTML elements based on the element name.<br>
 
                 <ul>
-                    <li><strong>Simple selectors</strong> (select elements based on name, id, class)</li>
-                    <li><strong>Combinator selectors</strong> (select elements based on a specific relationship between them)</li>
-                    <li><strong>Pseudo-class selectors</strong> (select elements based on a certain state)</li>
-                    <li><strong>Pseudo-elements selectors</strong> (select and style a part of an element)</li>
-                    <li><strong>Attribute selectors</strong> (select elements based on an attribute or attribute value)</li>
+                    <li>Here's an example of how an <strong>element selector</strong> could like in CSS:<br>
+                        <pre>
+                            p {
+                            text-align: center;
+                            color: red;
+                            }</pre></li>
                 </ul>
+            </li>
 
-                <p>The basic CSS selectors:</p>
+            <li><strong>Grouping Selector</strong><br>
+                The grouping selector selects all the HTML elements with the same style definitions.<br>
+
                 <ul>
-                    <li><strong>The element Selector</strong><br>
-                        The element selector selects HTML elements based on the element name.<br>
-
-                        <ul>
-                            <li>Here's an example of how an <strong>element selector</strong> could like in CSS:<br>
-                                <pre>
-                                p {
-                                    text-align: center;
-                                    color: red;
-                                }</pre></li>
-                        </ul>
-                    </li>
-
-                    <li><strong>Grouping Selector</strong><br>
-                        The grouping selector selects all the HTML elements with the same style definitions.<br>
-
-                        <ul>
-                            <li>Here's an example of how a <strong>grouping selector</strong> could like in CSS:<br>
-                                <pre>
-                                h1, h2, p {
-                                text-align: center;
-                                color: red;
-                                }</pre></li>
-                        </ul>
-                    </li>
+                    <li>Here's an example of how a <strong>grouping selector</strong> could like in CSS:<br>
+                        <pre>
+                            h1, h2, p {
+                            text-align: center;
+                            color: red;
+                            }</pre></li>
                 </ul>
+            </li>
+        </ul>
 
-                <h3>CSS Comments</h3>
+        <h3>CSS Comments</h3>
 
-                <p><strong>Comments</strong> are used to explain the code, and may help when you edit the source code at a later date.</p>
-                <p><strong>Comments</strong> are ignored by browsers, that's why they are not displayed in the browser.</p>
-                <p>A <strong>CSS comment</strong> is placed inside the "<strong>style</strong>" element, and starts with "<strong>/*</strong>"
-                    and ends with "<strong>*/</strong>".</p>
+        <p><strong>Comments</strong> are used to explain the code, and may help when you edit the source code at a later date.</p>
+        <p><strong>Comments</strong> are ignored by browsers, that's why they are not displayed in the browser.</p>
+        <p>A <strong>CSS comment</strong> is placed inside the "<strong>style</strong>" element, and starts with "<strong>/*</strong>"
+            and ends with "<strong>*/</strong>".</p>
 
-                <p>Here's an example of how a <strong>comment</strong> could like in <strong>CSS</strong>:</p>
+        <p>Here's an example of how a <strong>comment</strong> could like in <strong>CSS</strong>:</p>
 
-                <pre>/* This is a single-line comment */
-                p {
-                color: red;
-                }</pre>
+        <pre>/* This is a single-line comment */
+            p {
+            color: red;
+            }</pre>
 
-              
-            </div>
-        </article>
+        <h2>Colors</h2>
+        <img src="colors.webp" alt="CSS Colors">
+        <h3>Color Names</h3>
+        <p><strong>Colors</strong> are specified using predefined <strong>color names</strong>, or <strong>RGB</strong>,
+            <strong>HEX</strong>, <strong>HSL</strong>, <strong>RGBA</strong>, <strong>HSLA values</strong>.</p>
+
+        <p>In <strong>CSS</strong>, a <strong>color</strong> can be specified by using a predefined <strong>color name</strong>:</p>
+
+        <ul>
+            <li>Tomato</li>
+            <li>Orange</li>
+            <li>DodgerBlue</li>
+            <li>MediumSeaGreen</li>
+            <li>Gray</li>
+            <li>SlateBlue</li>
+            <li>Violet</li>
+            <li>LightGray</li>
+            <li>...</li>
+        </ul>
+
+        <p></p>
+
+        <h3>Hexadecimal Colors</h3>
+
+        <p>A <strong>hexadecimal color</strong> is specified with: <strong>#RRGGBB</strong>, where the <strong>RR</strong> (red),
+            <strong>GG</strong> (green) and <strong>BB</strong> (blue)<br> hexadecimal integers specify
+            the components of the color.</p>
+
+        <p>About <strong>hex values</strong>:</p>
+
+        <ul>
+            <li>In CSS, a color can be specified using a hexadecimal value in the form:<br>
+                <strong>#rrggbb</strong></li>
+
+            <li>Where <strong>rr</strong> (red), <strong>gg</strong> (green) and <strong>bb</strong> (blue) are
+                <strong>hexadecimal values</strong><br> between 00 and ff (same as decimal 0-255).</li>
+
+            <li>To display black, set all values to 00, like this: <strong>#000000</strong>.</li>
+
+            <li>To display white, set all values to ff, like this: <strong>#ffffff</strong>.</li>
+        </ul>
+
+        <p>About the <strong>3-digit hex value</strong>:</p>
+
+        <ul>
+            <li>The <strong>3-digit hex code</strong> is a shorthand for some <strong>6-digit hex codes</strong>.</li>
+            <li>The <strong>3-digit hex code</strong> has the following form:<br>
+                <strong>#rgb</strong></li>
+            <li>Where r, g, and b represent the red, green, and blue components with values between 0 and f.</li>
+            <li>The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same<br> for each component.
+                So, if we have <strong>#ff00cc</strong>, it can be written like this: <strong>#f0c</strong>.</li>
+        </ul>
+        
+        <h2>Backgrounds</h2>
+        <h3>Background Color</h3>
+        <p>Setting background colors for elements.</p>
+
+        <h3>Background Image</h3>
+        <p>Adding background images to elements.</p>
+
+        <h3>Background Image - Repeat and Position</h3>
+        <p>Controlling the repetition and position of background images.</p>
+
+        <h2>Text</h2>
+        <h3>Text Color and Alignment</h3>
+        <p>Changing text color and alignment.</p>
+
+        <h3>Text Decoration and Transformation</h3>
+        <p>Decorating and transforming text.</p>
+
+        <h2>Fonts</h2>
+        <h3>Serif and Sans-serif Fonts</h3>
+        <p>Understanding the difference between serif and sans-serif fonts.</p>
+
+        <h3>Font Family, Style, Size, and Weight</h3>
+        <p>Customizing font family, style, size, and weight.</p>
+
+        <h2>Links</h2>
+        <h3>Styling Links</h3>
+        <p>Applying styles to links, including pseudo selectors.</p>
+
+        <h2>Combinators</h2>
+        <p>Understanding CSS combinators.</p>
+
+        <h2>Pseudo Classes</h2>
+        <h3>Syntax</h3>
+        <p>How to use pseudo classes in CSS.</p>
+
+        <h3>Anchor Pseudo-classes</h3>
+        <p>Styling anchor pseudo-classes.</p>
+        <h3>Hover on :first-child</h3>
+        <p>Applying styles to the first child when hovering.</p>
     </div>
 </article>
 </body>
