@@ -127,23 +127,190 @@
             <li>The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same<br> for each component.
                 So, if we have <strong>#ff00cc</strong>, it can be written like this: <strong>#f0c</strong>.</li>
         </ul>
-        
+
         <h2>Backgrounds</h2>
         <h3>Background Color</h3>
-        <p>Setting background colors for elements.</p>
+        <p><strong>The background-color property</strong> specifies the background color of an element.</p>
+        <p>The <strong>background color</strong> of a page can be set like this:</p>
+        <pre>
+            body {
+                background-color: lightblue;
+            }
+        </pre>
 
         <h3>Background Image</h3>
-        <p>Adding background images to elements.</p>
+        <p>The <strong>background-image property</strong> specifies an image to use as the background of an element.</p>
+        <p>By default, the image is repeated, so it covers the entire element.</p>
+
+        <p>This is how you can set a <strong>background image</strong> for a page: </p>
+
+        <pre>
+            body {
+                background-image: url("paper.gif");
+            }
+        </pre>
 
         <h3>Background Image - Repeat and Position</h3>
-        <p>Controlling the repetition and position of background images.</p>
+        <p>About <strong>background-repeat</strong>:</p>
+
+        <ul>
+            <li>By default, the <strong>background-image property</strong> repeats an image both horizontally and vertically.</li>
+            <li>Some images should be repeated only horizontally or vertically, or they will look strange<br>
+                (a good example of how it will look if it was strange is already presented above):</li>
+            <li>If the image above is repeated only horizontally (<strong>background-repeat: repeat-x;</strong>), the background<br>
+                will look better:
+                <pre>
+                    body {
+                        background-image: url("gradient_bg.png");
+                        background-repeat: repeat-x;
+                    }
+                </pre></li>
+            <li>To repeat an image vertically, set background-repeat: <strong>repeat-y;</strong></li>
+            <li>Showing the <strong>background image</strong> only once is also specified by the background-repeat property:
+                <pre>
+                    body {
+                        background-image: url("img_tree.png");
+                        background-repeat: no-repeat;
+                    }
+                </pre></li>
+        </ul>
+
+        <p>In the last example above, the <strong>background image</strong> is placed in the same place as the text.
+            It is possible to change the position of the image, so that it does not disturb the text too much.</p>
+
+        <p>About <strong>background-position</strong>:</p>
+
+        <ul>
+            <li>The <strong>background-position property</strong> is used to specify the position of the background image.</li>
+            <li>Here's an example where the <strong>background-image</strong> is placed in the top-right corner:
+                <pre>
+                    body {
+                        background-image: url("img_tree.png");
+                        background-repeat: no-repeat;
+                        background-position: right top;
+                    }
+                </pre></li>
+        </ul>
 
         <h2>Text</h2>
         <h3>Text Color and Alignment</h3>
-        <p>Changing text color and alignment.</p>
+        <p>About the <strong>Text Color</strong>:</p>
+
+        <p>The <strong>color property</strong> is used to set the color of the text. The color is specified by:</p>
+
+        <ul>
+            <li>a <strong>color name</strong> - like "<strong>red</strong>"</li>
+            <li>a <strong>HEX value</strong> - like "<strong>#ff0000</strong>"</li>
+            <li>an <strong>RGB value</strong> - like "<strong>rgb(255,0,0)</strong>"</li>
+        </ul>
+
+        <p>The <strong>default text color</strong> for a page is defined in the <strong>body selector</strong>:</p>
+        <pre>
+            body {
+                color: blue;
+            }
+
+            h1 {
+                color: green;
+            }
+        </pre>
+
+        <p>About the <strong>Text Alignment</strong>:</p>
+
+        <p>The <strong>text-align property</strong> is used to set the <strong>horizontal alignment</strong> of a text.</p>
+
+        <p>A text can be <strong>left</strong> or <strong>right aligned</strong>, <strong>centered</strong>,
+            or <strong>justified</strong>.</p>
+
+        <p>The following example shows <strong>center aligned</strong>, and <strong>left</strong> and <strong>right aligned text</strong> (left alignment is default if text direction
+            is left-to-right, and right alignment is default if text direction is right-to-left):</p>
+
+        <pre>
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: left;
+            }
+
+            h3 {
+                text-align: right;
+            }
+        </pre>
+
+        <p>When the <strong>text-align property</strong> is set to "<b><i>justify</i></b>", each line is stretched so that every line has equal width,
+            and the left and right margins are straight (like in magazines and newspapers):</p>
+
+        <pre>
+            div {
+                text-align: justify;
+            }
+        </pre>
+
+        <p>In <b>CSS</b>, there also exists a <b>text-align-last property</b> which specifies how to align the last line of a text.</p>
 
         <h3>Text Decoration and Transformation</h3>
-        <p>Decorating and transforming text.</p>
+        <p>About <b>Text Decoration</b>:</p>
+
+        <p>In CSS, following there are following <b>decoration-properties</b> to add a decoration to text:</p>
+
+        <ul>
+            <li><b>text-decoration-line</b><br>
+                The text-decoration-line property is used to add a decoration line to text.<br>
+                Here's an example:
+                <pre>
+                    h1 {
+                        text-decoration-line: overline;
+                    }</pre></li>
+
+            <li><b>text-decoration-color</b><br>
+                The text-decoration-color property is used to set the color of the decoration line.<br>
+                <pre>
+                    h1 {
+                        text-decoration-line: overline;
+                        text-decoration-color: red;
+                    }
+                </pre></li>
+
+            <li><b>text-decoration-style</b><br>
+                The text-decoration-style property is used to set the style of the decoration line.<br>
+                <pre>
+                    h1 {
+                        text-decoration-line: underline;
+                        text-decoration-style: solid;
+                    }</pre></li>
+
+            <li><b>text-decoration-thickness</b><br>
+                The text-decoration-thickness property is used to set the thickness of the decoration line.<br>
+                <pre>
+                    h1 {
+                        text-decoration-line: underline;
+                        text-decoration-thickness: 25%;
+                    }</pre></li>
+
+            <li><b>text-decoration</b><br>
+                Sets all the text-decoration properties in one declaration.</li>
+        </ul>
+
+        <p>About <b>Text Transformation</b>:</p>
+
+        <p>The <b>text-transform property</b> is used to specify <b>uppercase</b> and <b>lowercase</b> letters in a text.</p>
+        <p>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</p>
+
+        <pre>
+            p.uppercase {
+                text-transform: uppercase;
+            }
+
+            p.lowercase {
+                text-transform: lowercase;
+            }
+
+            p.capitalize {
+                text-transform: capitalize;
+            }
+        </pre>
 
         <h2>Fonts</h2>
         <h3>Serif and Sans-serif Fonts</h3>
