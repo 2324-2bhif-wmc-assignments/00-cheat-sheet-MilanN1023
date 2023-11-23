@@ -12,8 +12,29 @@ header {
     padding: 20px;
 }
 
+@keyframes rainbow {
+    0% {
+        width: 50px;
+        height: 50px;
+    }
+    60% {
+        width: 150px;
+        height: 200px;
+        filter: blur(30);
+        transform: translate(10rem, 10rem);
+    }
+    90% {
+        height: 200px;
+        width: 200px;
+    }
+    100% {
+
+    }
+}
+
 h1 {
     font-size: 36px;
+    text-shadow: 2px 2px #f00000;
 }
 
 .content {
@@ -41,4 +62,46 @@ pre {
     border: 1px solid #ccc; /* Einen dünnen Rahmen hinzufügen */
     border-radius: 5px; /* Abrundung der Ecken für eine bessere Optik */
     white-space: pre-wrap; /* Umbruch von langen Zeilen ermöglichen */
+}
+
+
+
+#li1 {
+    font-family: "Times New Roman", "Garamond", serif;
+}
+
+#li2 {
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+#li3 {
+    font-family: "Courier New", "Lucida Console", monospace;
+}
+
+#li4 {
+    font-family: "Brush Script MT", cursive;
+}
+
+#li5 {
+    font-family: "Papyrus", "Copperplate Gothic Bold", fantasy;
+}
+
+div {
+    font-family: "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+    font-family: "Helvetica", sans-serif;
+}
+
+#li6 {
+    font-style: normal;
+}
+
+#li7 {
+    font-style: italic;
+}
+
+#li8 {
+    font-style: oblique;
 }
