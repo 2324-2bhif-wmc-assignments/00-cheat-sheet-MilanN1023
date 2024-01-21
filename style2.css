@@ -104,3 +104,51 @@ h1, h2, h3 {
 #li8 {
     font-style: oblique;
 }
+
+li {
+    list-style-type: square;
+}
+
+dl {
+    font: 1rem 'Fira Sans', sans-serif; 
+}
+
+dl > dt {
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+thead {
+    background-color: #3f87a6;
+    color: #fff;
+}
+
+tbody {
+    background-color: #e4f0f5;
+}
+
+table {
+    border: 5px solid rgb(15, 83, 29);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    border-collapse: collapse; /* Ansehen */
+    letter-spacing: 1px;
+}
+
+td, th {
+    border: 1px solid rgb(190, 190, 190); /* Ansehen */
+    padding: 5px 10px; /* Ansehen */
+}
+
+tr > td { /* Ansehen */
+    text-align: center;
+}

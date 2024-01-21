@@ -1,0 +1,92 @@
+.div {
+    display: block;
+    text-align: center;
+    font-family: "Helvetica", Arial, "Helvetica", sans-serif;
+}
+
+.btn-one {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-two {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    width: 95px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.button-two {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btn-three {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    width: 94px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: none;
+}
+
+/*Example for later maybe*/
+#transition {
+    background: linear-gradient(to right, blue, green, yellow, purple);
+}
+
+#h1
+{
+    text-align: center;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+
+/*Margin -> nach außen*/
+/*Padding -> nach innen*/
