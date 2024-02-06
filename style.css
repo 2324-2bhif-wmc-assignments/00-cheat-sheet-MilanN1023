@@ -1,49 +1,142 @@
-h1 {
-    color: darkblue;
-    text-align: center;
-    font-size: 50px;
-}
-
-h4 {
-    color: dimgray;
-}
-
-h2 {
-    color: yellow;
-    font-size: 30px;
-    background-color: dimgray;
-}
-
-#para1 {
-    color: yellow;
-    text-align: center;
-    font-size: 50px;
-}
-
 body {
-    background-color: powderblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgrey;
+    margin: 1rem;
+    margin-inline: 10%;
 }
 
-h3.groove {
-    border-style: groove;
+.main-header {
+    text-align: center;
+    font-size: larger;
+    color: black;
+    background-color: #808080;
+    padding: 1rem;    
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-h1.solid {
-    border-style: solid;
+.main-title {
+    font-weight: 100;
 }
 
-h3.double {
-    border-style: double;
+.default {
+    background-color: lightgray; color: black;
+}
+.default:hover {
+    background: lightgray;
 }
 
-h3.dotted {
-    border-style: dotted;
+#heading{
+    text-align: center;
 }
 
-h3.dashed {
-    border-style: dashed;
+#myCheatsheet a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 10px 10px 0; /* Abrundung */
 }
 
-a:hover {
-    color: green;
+#myCheatsheet a:hover {
+    left: 0;
+}
+
+#General {
+    top: 100px;
+    background-color: #04AA6D;
+}
+
+#HTML {
+    top: 160px;
+    background-color: #2196F3;
+}
+
+#CSS {
+    top: 220px;
+    background-color: #f44336;
+}
+
+#Bootstrap {
+    top: 280px;
+    background-color: yellow;
+}
+
+dt {
+    margin-inline-start: 40px;
+}
+
+dd{
+    margin-inline-start: auto;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+#box_model_picture {
+    height: 200px;
+    width: 340px;   
+    float: right; 
+    margin-top: 4rem;
+}
+
+#box_model_list {
+    float: left;
+}
+
+.home-button {
+    text-align: center;
+    font-size: larger;
+    color: black;
+    background-image: linear-gradient(to bottom right, grey, lightgray);
+    padding: 1rem;    
+    border-radius: 10px;    
+}
+
+.home-button h2{
+    display: inline;    
+}
+
+.home-button a {
+    float: left;        
+}
+
+.return-picture {
+    height: 2rem;
+    width: 2rem;
+}
+
+@keyframes header-animation {
+    0%{
+        margin-top: -20rem;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+#heading {
+    animation: header-animation 2s ease-in-out forwards;
+}
+
+.home-button {
+    animation: header-animation 1s ease-in-out forwards;
+}
+
+#links a {
+    text-decoration: none;
+    color: black;
+    border-radius: 0.2rem;
+    background-color: grey;
+}
+
+h3 {
+    margin-top: 2%;
 }
