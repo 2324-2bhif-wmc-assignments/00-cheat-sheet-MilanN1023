@@ -54,12 +54,12 @@ body {
 
 #HTML {
     top: 160px;
-    background-color: #2196F3;
+    background-color: green;
 }
 
 #CSS {
     top: 220px;
-    background-color: #f44336;
+    background-color: blue;
 }
 
 #Bootstrap {
@@ -139,4 +139,16 @@ table, th, td {
 
 h3 {
     margin-top: 2%;
+}
+
+#img-right {
+    width: 12rem;
+    height: 17rem;
+    margin-left: 35rem;
+    padding-top: 5rem;
+}
+
+#img-left {
+   margin-left: 5rem;
+   border-radius: 30%;
 }
