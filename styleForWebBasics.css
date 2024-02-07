@@ -1,0 +1,262 @@
+html{
+    background-image: linear-gradient(to right, #224258, #007cc7);
+    color: whitesmoke;
+    font-size: 22px;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px grey;
+    font-weight: 650;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    background-color: #124258;
+    color: whitesmoke;
+}
+#tags h3{
+    color: orange;
+}
+strong, a{
+    color: #4DA8DA;
+}
+img.visibility{
+    visibility: hidden;
+}
+div:hover img.visibility{
+    visibility: visible;
+}
+.nav-bar  ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #203647;
+    margin: 0;
+}
+.nav-bar  li{
+    float: left;
+}
+
+.nav-bar  li > a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar  li > a:hover{
+    background-color: #111;
+}
+ol > li{
+    margin-bottom: 10px;
+}
+
+.start-section{
+    background-color: #124258;
+    border-style: groove;
+    border-radius: 12px;
+    border-color: #124258;
+}
+.second-section{
+    background-color: #203647;
+    border-style: groove;
+    border-radius: 12px;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.text-decorated{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #89be94;
+}
+.link-states{
+    color: #89be94;
+}
+section, ol, ul, dl{
+    margin: 30px 20px 20px 20px;
+}
+ol, ul, dl{
+    border-color: whitesmoke;
+    margin-bottom: 0;
+}
+h2, h3, ul > li, p, ol > li, dl > dt, dt > dd{
+    padding-left: 10px;
+}
+#url-syntax-diagram{
+    margin-top: 10px;
+    width: 1800px;
+}
+
+.example-styled-unordered-list{
+    list-style-type: square;
+    color: black;
+}
+.styled-ordered-list{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+
+    border-style: groove;
+    border-radius: 12px;
+}
+table{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+    width: 80%;
+}
+table, tr, th, td{
+    border: 0.3rem solid #111;
+}
+th{
+    background-color: rgb(180, 16, 16);
+}
+td{
+    background-color: #7a7a7a;
+}
+/*Animations*/
+
+/*First animation*/
+
+@keyframes smoothing-color-and-size-change {
+    from {
+        background-color: #585b57;
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        background-color: whitesmoke;
+        width: 1900px;
+        height: 150px;
+    }
+}
+@keyframes change-text-color{
+    from {
+        background-color: #585b57;
+        color: whitesmoke;
+    }
+    to {
+        background-color: whitesmoke;
+        color: #585b57;
+    }
+}
+.first-animation{
+    border-radius: 12px;
+    animation-name: smoothing-color-and-size-change;
+    animation-duration: 3s;
+
+    width: 1900px;
+    height: 150px;
+    background-color: whitesmoke;
+
+}
+.first-animation > h2{
+    border-radius: 12px;
+
+    animation-name: change-text-color;
+    animation-duration: 3s;
+    background-color: whitesmoke;
+    color: #504f4f;
+}
+
+#linear-gradient-example{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+}
+
+#radial-gradient-example{
+    border-radius: 12px;
+    height: 6rem;
+    background-image: radial-gradient(red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+}
+
+#conic-radient-example{
+    border-radius: 12px;
+    height: 6rem;
+    background-image: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+}
+
+/*Second animation*/
+@keyframes change-size-and-color {
+    0%    {border-radius: 160px; background-color: whitesmoke}
+    10%   {border-radius: 145px;}
+    20%   {border-radius: 130px;}
+    30%   {border-radius: 115px;}
+    40%   {border-radius: 100px;}
+    50%   {border-radius: 75px;}
+    60%   {border-radius: 60px;}
+    70%   {border-radius: 45px;}
+    80%   {border-radius: 30px;}
+    90%   {border-radius: 15px;}
+    100%  {border-radius: 0; background-color: #585b57;}
+}
+
+.second-animation{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    background-color: whitesmoke;
+
+    animation-name: change-size-and-color;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+
+    animation-iteration-count: infinite;
+
+    border-radius: 150px;
+}
+
+/*transition*/
+
+@keyframes translate {
+    0% { translate: 1rem }
+    100% { translate: 2rem }
+}
+
+.transition{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    background-color: whitesmoke;
+
+    animation-name: translate;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+.container-row{
+    display: flex;
+    background-color: #7ea8fd;
+}
+.container-col{
+    display: flex;
+    background-color: #7ea8fd;
+    flex-direction: column;
+}
+.flex-item{
+    margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+    background-color: #175cbd;
+    width: 30rem;
+}
+.container{
+    background-color: #91abdc;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.boycott-c-image{
+    width: 33%;
+    border-radius: 12px;
+}
+.image-container{
+    display: flex;
+    height: 15%;
+}

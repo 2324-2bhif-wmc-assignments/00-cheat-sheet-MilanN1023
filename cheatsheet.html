@@ -8,260 +8,269 @@
     <meta http-equiv="refresh" content="30">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>HTML Basics</title>
 </head> 
     <body>
         <article class="main-article">
-
-            <div class="home-button">  
-                <a href="index.html">
-                </a>
-                <h2>HTML</h2>
+            <div id="root">
+                <div id="nav-bar">
+                    <a style="text-decoration: none;" href="../index.html"><h1>Cheatsheet</h1></a>
+                    <div>
+                        <a class="card hoverable" href="WebBasics.html">General</a>
+                        <a class="card hoverable" id="nav-bar-active" href="cheatsheet.html">HTML</a>
+                        <a class="card hoverable"  href="cssBasics.html">CSS</a>
+                    </div>
+                </div>
+                <div class="home-button">  
+                    <a href="index.html">
+                    </a>
+                    <h2>HTML</h2>
+                </div>
+    
+                <link type="text/css" rel="stylesheet" href="style.css">
+    
+                <section>
+    
+                    <hr>
+    
+                    <h2 class="main-header">
+                        HTML Sample Questions
+                    </h2>
+    
+                    <h3>                  
+                        1) Name the components of html elements properly
+                    </h3>
+                    <p>
+                        First of all every HTML Document starts with the &lt;!DOCTYPE html&gt; declaration which declares the version of an HTML document.
+                        <br>
+                        The &lt;html&gt; is the opening tag of the HTML document and marks the beginning and the end of the HTML content.
+                        <br>
+                        The &lt;html&gt; consists of the &lt;head&gt; element which contains metadata about the document, such as the document's title, character encoding, linked stylesheets, and scripts.
+                        The &lt;body&gt; element is also a part of the &lt;html&gt; element which is responsible for the visible content of the web page, including text, images, links, and other elements that are displayed in the web browser.
+                    </p>
+    
+                    <hr>
+    
+                    <h3>                    
+                        2) Identify void elements and how they are denoted
+                    </h3>
+                    <p>
+                        A void element is an element in HTML that doesn't have a closing tag.
+                        <br>
+                        It is marked up by a start tag only. Void elements are used to represent elements that have no content.
+                        <br>
+                        Some examples for void elements would be:
+    
+                    </p>
+                    <ul>
+                        <li>
+                            &lt;br&gt;
+                        </li>
+                        <li>
+                            &lt;link&gt;
+                        </li>
+                        <li>
+                            &lt;img&gt;
+                        </li>
+                    </ul>
+    
+                    <hr>
+    
+                    <h3>                    
+                        3) Identify attributes
+                    </h3>
+                    <p>
+                        All HTML elements can have attributes.
+                        <br>
+                        Attributes provide additional information about elements, and they are always specified in the start tag.
+                        <br>
+                        Attributes usually come in name/value pairs like: name="value", for example the href attribute:
+                        &lt;a href="index.html">Cheat sheet&lt;/  a&gt;
+                    </p>
+    
+                    <hr>
+    
+                    <h3>                    
+                        4) Write down the correct DOCTYPE declaration for html 5
+                    </h3>
+                    <a>
+                        The correct DOCTYPE declaration for HTML5 is:
+                        <br>
+                        &lt;!DOCTYPE html&gt;
+                    </a>
+                </section>
+    
+                <hr>
+               
+                <h2 class="main-header">Lists and Tables</h2>
+    
+                <section>
+    
+                    <h3>Lists:</h3>
+    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kind of Lists</th>
+                                <th>Required tags and meaning</th>
+                                <th>Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Unordered List
+                                </td>
+                                <td>
+                                    &lt;ul&gt;:
+                                    The list items will be marked with bullets and are not sorted.
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            First Item
+                                        </li>
+                                        <li>
+                                            Second Item
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ordered List
+                                </td>
+                                <td>
+                                    &lt;ol&gt;: The Items can be marked numerical or alphabetical.
+                                </td>
+                                <td>
+                                    <p>Default list style:</p>
+        
+                                    <ol>
+                                        <li>
+                                            First Item
+                                        </li>
+                                        <li>
+                                            Second Item
+                                        </li>
+                                    </ol>
+        
+                                    <p>
+                                        Alphabetical list style
+                                        <br>
+                                        &lt;ol style="list-style-type:lower-alpha;"&gt;&lt;/ol&gt;
+                                    </p>
+                                    
+                                    <ol style="list-style-type:lower-alpha;">
+                                        <li>
+                                            First Item
+                                        </li>
+                                        <li>
+                                            Second Item
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td>
+                                    Description List
+                                </td>
+                                <td>
+                                    &lt;dl&gt;: A description list is a list of terms, with a description of each term.
+                                </td>
+                                <td>
+                                    <dl>
+                                        <dt>Term &lt;dt&gt;</dt>
+                                        <dd>Description &lt;dd&gt;</dd>
+                                    </dl>                                
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+    
+                <section>
+                    <h3>Tables:</h3>
+    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First table header</th>
+                                <th>Second table header</th>
+                                <th>Third table header</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>First table cell</td>
+                                <td>Second table cell</td>
+                                <td>Third table cell</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>First footer cell</td>
+                                <td>Second footer cell</td>
+                                <td>Third footer cell</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                
+                <section>
+                    <hr>
+                        
+                    <h2 class="main-header">Classes:</h2>
+    
+                    <p>The HTML class attribute is used to specify a class for an HTML element.
+                        Multiple HTML elements can share the same class.
+                        <br>
+                        The start tag of an element with a class: &lt;p class="message"&gt;
+                    </p>
+    
+                    <p>The class attribute is often used to point to a class name in a style sheet.</p>
+                </section>
+    
+                <section>
+                    <hr>
+    
+                    <h2 class="main-header">IDs:</h2>
+    
+                    <p>
+                        The HTML id attribute is used to specify a unique id for an HTML element.
+                        <br>
+                        You cannot have more than one element with the same id in an HTML document.                    
+                    </p>
+    
+                    <p>
+                        The id attribute specifies a unique id for an HTML element. 
+                        <br>
+                        The value of the id attribute must be unique within the HTML document.
+                        <br>
+                        The id attribute is used to point to a specific style declaration in a style sheet.  
+                    </p>
+    
+                    <p>The start tag of an element with an ID: &lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;</p>
+                </section>
+    
+                <section>
+                    <hr>
+    
+                    <h2 class="main-header">Box Model:</h2>
+    
+                    <p>Explanation of the different parts:</p>
+    
+                    <ul id="box_model_list">
+                        <li>Content -  The content of the box, where text and images appear</li>
+                        <li>Padding - Clears an area around the content. The padding is transparent</li>
+                        <li>Border - A border that goes around the padding and content</li>
+                        <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                    </ul>
+                </section>
             </div>
-
-            <link type="text/css" rel="stylesheet" href="style.css">
-
-            <section>
-
-                <hr>
-
-                <h2 class="main-header">
-                    HTML Sample Questions
-                </h2>
-
-                <h3>                  
-                    1) Name the components of html elements properly
-                </h3>
-                <p>
-                    First of all every HTML Document starts with the &lt;!DOCTYPE html&gt; declaration which declares the version of an HTML document.
-                    <br>
-                    The &lt;html&gt; is the opening tag of the HTML document and marks the beginning and the end of the HTML content.
-                    <br>
-                    The &lt;html&gt; consists of the &lt;head&gt; element which contains metadata about the document, such as the document's title, character encoding, linked stylesheets, and scripts.
-                    The &lt;body&gt; element is also a part of the &lt;html&gt; element which is responsible for the visible content of the web page, including text, images, links, and other elements that are displayed in the web browser.
-                </p>
-
-                <hr>
-
-                <h3>                    
-                    2) Identify void elements and how they are denoted
-                </h3>
-                <p>
-                    A void element is an element in HTML that doesn't have a closing tag.
-                    <br>
-                    It is marked up by a start tag only. Void elements are used to represent elements that have no content.
-                    <br>
-                    Some examples for void elements would be:
-
-                </p>
-                <ul>
-                    <li>
-                        &lt;br&gt;
-                    </li>
-                    <li>
-                        &lt;link&gt;
-                    </li>
-                    <li>
-                        &lt;img&gt;
-                    </li>
-                </ul>
-
-                <hr>
-
-                <h3>                    
-                    3) Identify attributes
-                </h3>
-                <p>
-                    All HTML elements can have attributes.
-                    <br>
-                    Attributes provide additional information about elements, and they are always specified in the start tag.
-                    <br>
-                    Attributes usually come in name/value pairs like: name="value", for example the href attribute:
-                    &lt;a href="index.html">Cheat sheet&lt;/  a&gt;
-                </p>
-
-                <hr>
-
-                <h3>                    
-                    4) Write down the correct DOCTYPE declaration for html 5
-                </h3>
-                <a>
-                    The correct DOCTYPE declaration for HTML5 is:
-                    <br>
-                    &lt;!DOCTYPE html&gt;
-                </a>
-            </section>
-
-            <hr>
-           
-            <h2 class="main-header">Lists and Tables</h2>
-
-            <section>
-
-                <h3>Lists:</h3>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kind of Lists</th>
-                            <th>Required tags and meaning</th>
-                            <th>Examples</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Unordered List
-                            </td>
-                            <td>
-                                &lt;ul&gt;:
-                                The list items will be marked with bullets and are not sorted.
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>
-                                        First Item
-                                    </li>
-                                    <li>
-                                        Second Item
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Ordered List
-                            </td>
-                            <td>
-                                &lt;ol&gt;: The Items can be marked numerical or alphabetical.
-                            </td>
-                            <td>
-                                <p>Default list style:</p>
-    
-                                <ol>
-                                    <li>
-                                        First Item
-                                    </li>
-                                    <li>
-                                        Second Item
-                                    </li>
-                                </ol>
-    
-                                <p>
-                                    Alphabetical list style
-                                    <br>
-                                    &lt;ol style="list-style-type:lower-alpha;"&gt;&lt;/ol&gt;
-                                </p>
-                                
-                                <ol style="list-style-type:lower-alpha;">
-                                    <li>
-                                        First Item
-                                    </li>
-                                    <li>
-                                        Second Item
-                                    </li>
-                                </ol>
-                            </td>
-                        </tr>
-    
-                        <tr>
-                            <td>
-                                Description List
-                            </td>
-                            <td>
-                                &lt;dl&gt;: A description list is a list of terms, with a description of each term.
-                            </td>
-                            <td>
-                                <dl>
-                                    <dt>Term &lt;dt&gt;</dt>
-                                    <dd>Description &lt;dd&gt;</dd>
-                                </dl>                                
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section>
-                <h3>Tables:</h3>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>First table header</th>
-                            <th>Second table header</th>
-                            <th>Third table header</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>First table cell</td>
-                            <td>Second table cell</td>
-                            <td>Third table cell</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>First footer cell</td>
-                            <td>Second footer cell</td>
-                            <td>Third footer cell</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-            
-            <section>
-                <hr>
-                    
-                <h2 class="main-header">Classes:</h2>
-
-                <p>The HTML class attribute is used to specify a class for an HTML element.
-                    Multiple HTML elements can share the same class.
-                    <br>
-                    The start tag of an element with a class: &lt;p class="message"&gt;
-                </p>
-
-                <p>The class attribute is often used to point to a class name in a style sheet.</p>
-            </section>
-
-            <section>
-                <hr>
-
-                <h2 class="main-header">IDs:</h2>
-
-                <p>
-                    The HTML id attribute is used to specify a unique id for an HTML element.
-                    <br>
-                    You cannot have more than one element with the same id in an HTML document.                    
-                </p>
-
-                <p>
-                    The id attribute specifies a unique id for an HTML element. 
-                    <br>
-                    The value of the id attribute must be unique within the HTML document.
-                    <br>
-                    The id attribute is used to point to a specific style declaration in a style sheet.  
-                </p>
-
-                <p>The start tag of an element with an ID: &lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;</p>
-            </section>
-
-            <section>
-                <hr>
-
-                <h2 class="main-header">Box Model:</h2>
-
-                <p>Explanation of the different parts:</p>
-
-                <ul id="box_model_list">
-                    <li>Content -  The content of the box, where text and images appear</li>
-                    <li>Padding - Clears an area around the content. The padding is transparent</li>
-                    <li>Border - A border that goes around the padding and content</li>
-                    <li>Margin - Clears an area outside the border. The margin is transparent</li>
-                </ul>
-            </section>
         </article>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>

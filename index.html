@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Milans Cheatsheet</title>
-
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
     <body>
-    <div id="myCheatsheet" class="WMC">
-        <a href="cheatsheet.html" id="HTML">HTML</a>
-        <a href="cssBasics.html" id="CSS">CSS</a>
-    </div>
-
-    <div id="heading">
-        <h2 class="main-header">Cheat Sheet</h2>
-        <p>Cheatsheet made by Milan Nuzdic</p>
-    </div>
-
-    <div >
-        <img src="assets/Html.png" alt="Html-Foto" id="img-left">
-        <img src="assets/Css.png" alt="Css-Foto" id="img-right">
-    </div>
+        <div id="root">
+            <div id="nav-bar">
+                <h1>My Cheatsheet</h1>
+            </div>
+            <div id="cards-holder">
+                <a href="WebBasics.html">
+                    <div id="myCheatsheet" class="glowing hoverable card drop-in" style="--order:0">
+                        <div class="card-content">
+                            <img class="card-icon" src="assets/WWW_Logo.jpg" alt="Icon">
+                            <h3>General</h3>
+                            <p>
+                                About World Wide Web
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="cheatsheet.html">
+                    <div class="glowing hoverable card drop-in" style="--order:1">
+                        <div class="card-content">
+                            <img class="card-icon" src="assets/Html.png" alt="Icon">
+                            <h3>HTML</h3>
+                            <p>
+                                About HTML
+                            </p>
+                        </div>                    
+                    </div>
+                </a>   
+                <a href="cssBasics.html">
+                    <div class="glowing hoverable card drop-in" style="--order:2">
+                        <div class="card-content">
+                            <img class="card-icon" src="assets/Css.png" alt="Icon">
+                            <h3>CSS</h3>
+                            <p>
+                                About CSS
+                            </p>
+                        </div>                    
+                    </div>
+                </a>
+            </div>
+        </div>
     </body>
 </html>
