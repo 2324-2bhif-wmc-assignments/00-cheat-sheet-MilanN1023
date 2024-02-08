@@ -10,25 +10,24 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
-@keyframes rainbow {
-    0% {
-        width: 50px;
-        height: 50px;
-    }
-    60% {
-        width: 150px;
-        height: 200px;
-        filter: blur(30);
-        transform: translate(10rem, 10rem);
-    }
-    90% {
-        height: 200px;
-        width: 200px;
-    }
-    100% {
 
-    }
+h2, h3 {
+    line-height: 2.0;
+    background-clip: text;
+    font-size: 1.4rem;
+    color: green;
+    -webkit-background-clip: text;
+    margin: 0;
+}
+
+h1 {
+    line-height: 2.0;
+    background-clip: text;
+    color: white;
+    -webkit-background-clip: text;
+    margin: 0;
 }
 
 .h1 {
@@ -44,7 +43,7 @@ header {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -81,14 +80,6 @@ pre {
 
 #li5 {
     font-family: "Papyrus", "Copperplate Gothic Bold", fantasy;
-}
-
-div {
-    font-family: "Times New Roman", serif;
-}
-
-h1, h2, h3 {
-    font-family: "Helvetica", sans-serif;
 }
 
 #li6 {
@@ -153,7 +144,6 @@ tr > td { /* Ansehen */
 
 #nav-bar {
     z-index: 1;
-    position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
@@ -183,4 +173,29 @@ tr > td { /* Ansehen */
 
 #nav-bar-active {
     border: 2px solid cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-for-navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 38.3rem;
+}
+
+#container-for-navbar > .card{
+    margin: 0.1rem;
+}
+
+#container-for-navbar > .card > a{
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.hoverable:hover {
+    border: 3px solid black;
 }

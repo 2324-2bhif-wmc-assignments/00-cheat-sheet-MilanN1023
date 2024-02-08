@@ -16,16 +16,25 @@
 <article>
     <div id="root">
         <div id="nav-bar">
-            <a style="text-decoration: none;" href="../index.html"><h1>Cheatsheet</h1></a>
-            <div>
-                <a class="card hoverable" href="WebBasics.html">General</a>
-                <a class="card hoverable" id="nav-bar-active" href="cheatsheet.html">HTML</a>
-                <a class="card hoverable"  href="cssBasics.html">CSS</a>
-            </div>
+            <header>
+                <a style="text-decoration: none;" href="index.html"><h1>Cheatsheet</h1></a>
+                
+                <div id="container-for-navbar">
+                    <button class="card hoverable first">
+                        <a href="WebBasics.html">General</a>
+                    </button>
+                    <button class="card hoverable">
+                        <a href="cheatsheet.html">HTML</a>
+                    </button>
+                    <button class="card hoverable">
+                        <a href="cssBasics.html">CSS</a>
+                    </button>
+                    <!--<a class="card hoverable" href="WebBasics.html">General</a>-->
+                    <!--<a class="card hoverable" id="nav-bar-active" href="cheatsheet.html">HTML</a>-->
+                    <!--<a class="card hoverable"  href="cssBasics.html">CSS</a>-->
+                </div>
+            </header>
         </div>
-        <header>
-            <h1 class="h1">CSS Basics</h1>
-        </header>
         <div class="content">
             <h2>CSS Syntax</h2>
             <img src="img_selector.gif" alt="Selector">
@@ -650,7 +659,9 @@
     
             <p>In the example above,  the selector matches the first "<b>i</b>" element in all "<b>p</b>" elements.</p>
     
-           
+            <h2>Flexbox</h2>
+
+            <img style="width: 65%;" src="assets/Flexbox.png" alt="Flexbox">
         </div>
     </div>
 </article>
